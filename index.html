@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <div class="heading">
+    SPLI<br>
+    TTER
+  </div>
+
+  <!-- The main centered card -->
+  <div class="card">
+
+    <!------------------- The white or input area-------------->
+    <div class="inputArea">
+      <div class="billDiv" id="bill">
+        <label for="input">Bill</label>
+        <!-- Bill Detail Corner -->
+        <div class="billContainer">
+          <div class="billAddOn">
+            <span><img src="./images/icon-dollar.svg" alt="$" srcset=""></span>
+          </div>
+          <div class="billInput">
+            <input id="totalBilAmt" value="" class="input" type="number" name="amount" placeholder="0" />
+          </div>
+        </div>
+      </div>
+      <!-- --------------- -->
+      <!-- Tip Detail Corner -->
+      <div class="tipDiv">
+        <label for="input">Select Tip %</label>
+
+        <div class="tipContainer">
+          <button class="tipBtn" type="submit" value="5">5%</button>
+          <button class="tipBtn" type="submit" value="10">10%</button>
+          <button class="tipBtn" type="submit" value="15">15%</button>
+        </div>
+        <div class="tipContainer">
+          <button class="tipBtn" type="submit" value="25">25%</button>
+          <button class="tipBtn" type="submit" value="50">50%</button>
+          <input class="customTip" type="number" name="customTip" placeholder="Custom" id="">
+        </div>
+      </div>
+
+      <!-- No of peoples -->
+      <div class="peopleDiv">
+        <label for="input">Number of People</label>
+        <div class="billContainer">
+          <div class="billAddOn">
+            <span><img src="./images/icon-person.svg" alt="👤" srcset=""></span>
+          </div>
+          <div class="billInput">
+            <input id="noOfPeople" class="input peopleInput" type="number" name="amount" placeholder="0" required>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-------------------------------------------------------->
+
+    <!---------------------- The diplay Area ----------------->
+    <div class="displayArea">
+
+      <div class="tipAmount">
+        <div class="labelContainer">
+
+          <label class="tipLabel" for="amount">Tip Amount</label>
+          <span class="displaySpan">/ person</span>
+        </div>
+        <div class="amtValue">
+          $<span id="tipAmt">0.00</span>
+        </div>
+      </div>
+
+      <div class="totalAmt">
+        <div class="labelContainer">
+          <label class="tipLabel" for="amount">Total</label>
+          <span class="displaySpan">/ person</span>
+        </div>
+        <div class="amtValue">$<span id="totalAmtDisplay"> 0.00</span></div>
+
+      </div>
+      <div class="resetContainer">
+        <button class="resetBtn" onclick="reset()" type="reset">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>

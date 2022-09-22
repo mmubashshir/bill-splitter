@@ -1,0 +1,319 @@
+:root {
+
+    /* Primary */
+    --StrongCyan: hsl(172, 67%, 45%);
+    --LightCyan: hsl(172, 67%, 80%);
+    /* Secondary */
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan: hsl(186, 14%, 43%);
+    --GrayishCyan: hsl(184, 14%, 56%);
+    --LightGrayishCyan: hsl(185, 41%, 84%);
+    --VeryLightGrayishCyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    /* min-height: 100vh; */
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    display: grid;
+    background-color: var(--LightGrayishCyan);
+    font-family: 'Space Mono', monospace;
+    color: var(--VeryDarkCyan);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.heading {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 10%;
+    font-weight: 700;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: var(--DarkGrayishCyan);
+    letter-spacing: 10px;
+    font-family: 'Space Mono', monospace;
+}
+
+.card {
+    display: flex;
+    margin: auto;
+    background-color: var(--White);
+    border-radius: 25px;
+    /* height: 50%; */
+    width: 50%;
+    padding: 25px;
+    box-shadow: var(--LightCyan) 0px 5px 15px;
+}
+
+/* INPUT AREA */
+.inputArea {
+    color: var(--DarkGrayishCyan);
+    font-size: 14px;
+    padding: 10px;
+    width: 50%;
+}
+
+input[type=number] {
+    text-align: right;
+    color: var(--VeryDarkCyan);
+    font-weight: 700;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    outline: none;
+    border-radius: 3px;
+}
+
+.input {
+    width: 100%;
+    padding: 6px;
+    margin: 8px 0;
+    padding-left: 25px;
+}
+
+input[type=number]:focus {
+    border: 2px solid var(--StrongCyan);
+    outline: none;
+}
+
+.billContainer {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.billInput {
+    flex: 1;
+}
+
+.billAddOn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    color: var(--GrayishCyan);
+}
+
+.tipDiv {
+    margin-top: 30px;
+}
+
+.tipContainer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipBtn {
+    border: none;
+    background-color: var(--VeryDarkCyan);
+    color: var(--White);
+    padding: 8px 25px;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 18px;
+}
+
+.tipBtn:hover {
+    background-color: var(--StrongCyan);
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.customTip {
+    border: none;
+    color: var(--VeryDarkCyan);
+    padding: 8px 25px;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 18px;
+    padding: 6px;
+}
+
+.customTip::placeholder {
+    text-align: center;
+}
+
+.peopleDiv {
+    margin-top: 30px;
+}
+
+/* 
+.peopleInput{
+    border: 2px solid rgb(209, 65, 65);
+} */
+
+
+/* DISPLAY AREA */
+.displayArea {
+    font-size: 14px;
+    background-color: var(--VeryDarkCyan);
+    width: 50%;
+    color: var(--White);
+    border-radius: 15px;
+    padding: 40px;
+    margin-left: 25px;
+}
+
+.tipAmount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tipLabel {
+    font-weight: bold;
+    display: block;
+}
+
+.amtValue {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: var(--StrongCyan);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.displaySpan {
+    color: var(--GrayishCyan);
+}
+
+.totalAmt {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resetContainer {
+    margin-top: 40%;
+}
+
+.resetBtn {
+    border: none;
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+    padding: 8px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    bottom: 0px;
+    width: 100%;
+    height: inherit;
+}
+
+.resetBtn:hover {
+    background-color: var(--LightCyan);
+    cursor: pointer;
+    /* opacity: 50%; */
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 1200px){
+    .card{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .heading{
+        position: relative;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .inputArea{
+        width: auto;
+    }
+
+    .displayArea{
+        width: auto;
+        margin: 0;
+    }
+}
