@@ -4,8 +4,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mmubashshir/bill-splitter)
-- Live Site URL: [Add live site URL here](https://mmubashshir.github.io/bill-splitter/)
+- Solution URL: [Project Github Link](https://github.com/mmubashshir/bill-splitter)
+- Live Site URL: [Bill Splitter App](https://mmubashshir.github.io/bill-splitter/)
 
 
 ## Table of contents
